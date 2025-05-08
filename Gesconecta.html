@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestconecta</title>
+    <style>
+        body {
+            background-color: #fcefff; /* Lilás suave */
+            color: #bf85ec; /* Roxo mais escuro para contraste */
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .logo {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 6%; /* Ajuste conforme necessário */
+        }
+
+        
+
+        /* Cabeçalho */
+        header {
+            background-color: #bca1f1; /* Tom lilás médio */
+            color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        /* Seção principal */
+        main {
+            background-color: #f6e6fa; /* Lavanda */
+            padding: 30px 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        main p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Rodapé */
+        footer {
+            background-color: #eea8ff; /* Lilás vibrante */
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer p {
+            color: #fff;
+            margin: 0;
+        }
+
+        /* Estilo do formulário */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        input, select {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 12px 20px;
+            background-color: #f78aff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ec8bff;
+        }
+
+        /* Responsividade */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            main p {
+                font-size: 1rem;
+            }
+        }
+        .content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Separação dos parágrafos */
+p {
+    margin-bottom: 15px; /* Espaçamento entre parágrafos */
+    line-height: 1.6;
+    color: #d86cee;
+}
+
+/* Título */
+h3 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: #c453fd;
+    text-align: center;
+}
+
+/* Espacamento extra entre título e texto */
+h3 + p {
+    margin-top: 10px;
+}
+    </style>
+</head>
+<body>
+    <img width="10%" src="/logoGesconecta.png" alt="Logo Gestconecta" class="logo">
+    <header>
+        <h1>Bem-vindo a Gestconecta!</h1> 
+        
+    </header>
+
+    <main>
+        <p>Este é um site específico para gestantes e doulas!</p>
+        <p>Aqui, conectamos doulas com gestantes que buscam um parto saudável,</p>
+        <p>de acordo com suas preferências e mostrando compatibilidade com as doulas cadastradas.</p>
+        
+        <h3>A importância de acompanhamento de uma doula</h3>
+        
+        <p>Apoio emocional: Reduz a ansiedade e fortalece a confiança da gestante;</p>
+        <p>Redução da dor e intervenções médicas: Técnicas que aliviam a dor e diminuem a necessidade de cesáreas;</p>
+        <p>Informação e empoderamento: Auxilia na tomada de decisões conscientes durante o parto;</p>
+        <p>Parto mais positivo: Mulheres acompanhadas por doulas relatam experiências mais tranquilas e humanizadas.</p>
+        
+    </main>
+
+    <footer>
+        <h3>Cadastre-se!</h3>
+        <p>Você é doula ou gestante? Cadastre-se para receber informações e apoio.</p>
+        
+        <form action="/cadastro" method="post">
+            <input type="text" name="nome" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <select name="tipo" required>
+                <option value="gestante">Sou Gestante</option>
+                <option value="doula">Sou Doula</option>
+            </select>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <p>© 2025 - Gestconecta</p>
+    </footer>
+
+</body>
+</html>
